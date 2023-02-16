@@ -6,10 +6,10 @@
  * "Naive" Algorithm of String Matching to find the number of occurrences of a pattern in a text.
  *
  * Given a text of size N and pattern of size M, the algorithm iterates the entire string once
- * and compares all characters  with the first character of the pattern, if this happens to be true, then it compares
+ * and compares all characters with the first character of the pattern, if this happens to be true, then it compares
  * all subsequent M characters of the string with the characters of the pattern, if any of those comparisons fails,
  * the appropriate variable is set to false. At the end of the second iteration, if said variable still holds true,
- * then the pattern is found and the number of occurrences is increase by one.
+ * then the pattern is found and the number of occurrences is increased by one.
  *
  * In the worst case, the algorithm performs N*M comparisons between characters, therefore the complexity is O(N*M)
  * If N >> M, O ≈ O(N)
