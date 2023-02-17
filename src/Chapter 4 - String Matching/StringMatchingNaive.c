@@ -16,7 +16,7 @@
  *
  * The function takes as input a text and a pattern, and returns the number of occurrences of pattern in text.
  */
-int string_matching(char *text, char* pattern)
+int string_matching(char *text, char *pattern)
 {
     unsigned int text_len = strlen(text);
     unsigned int pattern_len = strlen(pattern);
