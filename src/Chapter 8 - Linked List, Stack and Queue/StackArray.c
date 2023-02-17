@@ -3,7 +3,7 @@
 #include "stdbool.h"
 /*
  *  Implementation of a stack using a dynamically allocated array.
- *  Function create_stack act similarly as a constructor would in an object-oriented language.
+ *  Function create_stack acts similarly as a constructor would in an object-oriented language.
  *  Functions push and pop perform the basic operations of push and pop on the stack,
  *  they return false if the operation fails, otherwise they return true.
  *  print_stack and fill_stack are test functions used to empty and fill the whole stack
