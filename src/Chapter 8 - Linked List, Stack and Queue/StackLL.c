@@ -43,9 +43,8 @@ bool pop(Node **head, int *val)
 
 bool fill_stack(Node **head)
 {
-    int t = 0;
     for(int i = 0; i < 10; i++) {
-        push(head, t = rand() % 100);
+        push(head, i);
     }
     return true;
 }
@@ -61,7 +60,7 @@ bool empty_stack(Node **head)
 
 int main()
 {
-    Node *head = create_node(5);
+    Node *head = create_node(-1);
     fill_stack(&head);
     empty_stack(&head);
     return 0;

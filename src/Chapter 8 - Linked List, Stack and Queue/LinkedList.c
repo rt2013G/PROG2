@@ -52,7 +52,7 @@ bool fill_list(Node **head)
 {
     Node *curr = *(head);
     for(int i = 0; i < 10; i++) {
-        insert_node_after(&curr, create_node(rand() % 100));
+        insert_node_after(&curr, create_node(i));
         curr = curr->next;
     }
     return true;
@@ -60,7 +60,7 @@ bool fill_list(Node **head)
 
 int main()
 {
-    Node *head = create_node(5);
+    Node *head = create_node(-1);
     fill_list(&head);
     visit_list(&head);
     return 0;
