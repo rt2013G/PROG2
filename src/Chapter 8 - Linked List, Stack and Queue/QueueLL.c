@@ -54,7 +54,7 @@ bool dequeue(Queue *q, int *val)
         printf("The queue is empty.\n");
         return false;
     }
-    *val =q->head->val;
+    *val = q->head->val;
     Node *tmp = q->head;
     q->head = q->head->next;
     free(tmp);
