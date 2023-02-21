@@ -42,9 +42,9 @@ bool visit_tree_recursive(Node *root)
 
 int main()
 {
-    int size = 7;
+    int size = 8;
     int test_array[] = {2, 3, 5, 12, 13, 22, 123, 992};
-    Node *root = array_to_bst(test_array, 0, size);
+    Node *root = array_to_bst(test_array, 0, size - 1);
     visit_tree_recursive(root);
     return 0;
 }
