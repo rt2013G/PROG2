@@ -23,7 +23,7 @@ Tree *create_tree(int size)
 
 bool visit_tree_recursive(Tree *tree, int index)
 {
-    if(index >= tree->size) return false;
+    if(index >= tree->size) return true;
     printf("Value: %d.\n", tree->items[index]);
     visit_tree_recursive(tree, 2 * index + 1);
     visit_tree_recursive(tree, 2 * index + 2);
