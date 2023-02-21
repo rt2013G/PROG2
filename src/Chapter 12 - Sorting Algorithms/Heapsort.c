@@ -3,6 +3,9 @@
 #include "stdbool.h"
 /*
  * Implementation of the Heapsort algorithm. The heap implementation is the same as "Chapter 9/Heap.c".
+ * The heapify function takes O(log n), and is called once for every parent node when first building the heap,
+ * then n - 1 times to repair the heap property in the heapsort() function.
+ * Therefore, the time complexity of the Heapsort algorithm is O(n * log n).
  */
 typedef struct Heap {
     int size;
